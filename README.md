@@ -38,18 +38,22 @@ Install the dependencies.
 
 `npm i`
 
-Start the web server-side server.
-
-`npm start`
-
-Start the development web client-side provider, you need 2 node.js command line window to run server and provided simultaneously.
+Build and start the development server. As per ES6 boilerplate, this will open up a synchronized browser tab with url localhost:7777.
 
 `npm run dev`
 
-Access your project in the browser.
+Build the production server. The code will be placed in /dist folder.
+
+`npm run build`
+
+Start the production server.
+
+`npm start`
+
+Access your project in the browser. (Production server does not automatically open a tab)
 
 `locahost:7777`
 
-The server-side is served at localhost:7788. Client should connect to port 7788 to interact with server, or you may change the configuration in server.js and related client-side script to chanag it.
+You may change the configuration in server.js and related client-side script (example in /src/states/Test.js) to change it. You must also change the PORT variable in `npm start` to match the new port number.
 
 Check function getMysqlCon() in server.js for configuration on connection to MySQL database.
