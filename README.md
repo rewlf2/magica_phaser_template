@@ -42,7 +42,7 @@ Start the development web server-side server.
 
 `npm start`
 
-Start the development web client-side provider.
+Start the development web client-side provider, you need 2 node.js command line window to run server and provided simultaneously.
 
 `npm run dev`
 
@@ -50,4 +50,4 @@ Access your project in the browser.
 
 `locahost:7777`
 
-The server-side is served at localhost:7788. Client should connect to port 7788, or you may change the configuration in server.js and related client-side script to chanag it.
+The server-side is served at localhost:7788. Client should connect to port 7788 to interact with server, or you may change the configuration in server.js and related client-side script to chanag it.
