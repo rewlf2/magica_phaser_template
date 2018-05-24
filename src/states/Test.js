@@ -21,17 +21,17 @@ export default class Test extends Phaser.State {
         Test.texts = [];
         
         Test.connection = [];
-        Test.connection.socket = io.connect("http://localhost:7788");
+        Test.connection.socket = io.connect("http://localhost:7777");
     }
 
     /**
      * Setup all objects, etc needed for the main game state.
      */
     create() {
-        Test.graphic.logo = this.add.image(game.world.centerX- Test.graphic_size.logo.x/2, 200, 'login/magica_logo');
+        Test.graphic.logo = this.add.image(this.game.world.centerX- Test.graphic_size.logo.x/2, 200, 'login/magica_logo');
         window.addEventListener('resize', throttle(this.resize.bind(this), 50), false);
         this.game.plugins.add(PhaserInput.Plugin);
-        Test.input.cred = this.game.add.inputField(game.world.centerX-125, 320, { 
+        Test.input.cred = this.game.add.inputField(this.game.world.centerX-125, 320, { 
             width: 250,
             padding: 8,
             borderWidth: 1,
@@ -39,7 +39,7 @@ export default class Test extends Phaser.State {
             borderRadius: 6,
             placeHolder: 'Username or Email'
         });
-        Test.input.password = this.game.add.inputField(game.world.centerX-125, 350, { 
+        Test.input.password = this.game.add.inputField(this.game.world.centerX-125, 350, { 
             width: 250,
             padding: 8,
             borderWidth: 1,
@@ -51,7 +51,8 @@ export default class Test extends Phaser.State {
         Test.texts.mysql_text = this.add.text(100, 200, "Testtext", { font: 'Arial', fontSize: 28, fill: '#ff0000' });
         Test.texts.mysql2_text = this.add.text(100, 250, "MySQLtest", { font: 'Open Sans', fontSize: 28, fill: '#ff0000' });
 
-		Test.connection.socket.on("mysql_change_text", this.onMysqlChangeText); 
+        Test.texts.mysql2_text.setText ('Server not connected');
+        Test.connection.socket.on("mysql_change_text", this.onMysqlChangeText); 
         Test.connection.socket.emit('mysql_test', {});
     }
   
@@ -64,9 +65,9 @@ export default class Test extends Phaser.State {
     
         this.scale.setGameSize(width, height);
         
-        Test.graphic.logo.x = this.world.centerX- this.graphic_size.logo.x/2;
-        Test.input.cred.x = game.world.centerX-125;
-        Test.input.password.x = game.world.centerX-125;
+        Test.graphic.logo.x = this.world.centerX- Test.graphic_size.logo.x/2;
+        Test.input.cred.x = this.game.world.centerX-125;
+        Test.input.password.x = this.game.world.centerX-125;
     }
   
     /**
@@ -74,7 +75,6 @@ export default class Test extends Phaser.State {
      */
     update() {
         Test.connection.socket.on('connect', function() {
-            // console.log('check 2', Test.connection.socket.connected);
         });
     }
   }
