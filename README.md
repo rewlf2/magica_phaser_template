@@ -42,7 +42,7 @@ Build and start the development server. As per ES6 boilerplate, this will open u
 
 `npm run dev`
 
-Build the production server. The code will be placed in /dist folder.
+Build the production server. The code will be placed in [/dist] folder.
 
 `npm run build`
 
@@ -54,6 +54,6 @@ Access your project in the browser. (Production server does not automatically op
 
 `locahost:7777`
 
-You may change the configuration in server.js and related client-side script (example in /src/states/Test.js) to change it. You must also change the PORT variable in `npm start` inside [package.json] to match the new port number.
+You may change the configuration in server.js and related client-side script (example in [src/states/Test.js]) to change it. You must also change the PORT variable in `npm start` inside [package.json] to match the new port number.
 
 Check function getMysqlCon() in server.js for configuration on connection to MySQL database.
