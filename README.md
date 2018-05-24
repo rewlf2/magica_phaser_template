@@ -38,7 +38,7 @@ Install the dependencies.
 
 `npm i`
 
-Start the development web server-side server.
+Start the web server-side server.
 
 `npm start`
 
