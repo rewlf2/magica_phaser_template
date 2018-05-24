@@ -52,4 +52,4 @@ Access your project in the browser.
 
 The server-side is served at localhost:7788. Client should connect to port 7788 to interact with server, or you may change the configuration in server.js and related client-side script to chanag it.
 
-Check function getMysqlCon() for configuration on connection to MySQL database.
+Check function getMysqlCon() in server.js for configuration on connection to MySQL database.
