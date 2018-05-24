@@ -16,17 +16,17 @@ The purpose of this repo is to be a starting point for creating a game. The idea
 * [Socket.io](https://github.com/socketio/socket.io)
 * [Phaser-input](https://github.com/orange-games/phaser-input)
 
-* Provided by [Phaser ES6 Boilerplate](https://github.com/goldfire/phaser-boilerplate):
 
-** [Phaser-CE](https://github.com/photonstorm/phaser-ce) through npm (automatic custom build).
-** Boilerplate written in ES6 class structure.
-** Heavily commented and stripped down for most minimal build.
-** [Webpack](https://webpack.js.org/) + [Bublé](https://buble.surge.sh/guide/) + [PostCSS](http://postcss.org/).
-** [BrowserSync](https://browsersync.io/) for livereload during development.
-** [Stats.js](https://github.com/mrdoob/stats.js/) for displaying FPS/MS.
-** [phaser-manifest-loader](https://github.com/mattcolman/phaser-manifest-loader) for easy asset loading.
-** Separate builds for production and development.
-** [Howler.js](https://github.com/goldfire/howler.js/)
+Provided by [Phaser ES6 Boilerplate](https://github.com/goldfire/phaser-boilerplate):
+* [Phaser-CE](https://github.com/photonstorm/phaser-ce) through npm (automatic custom build).
+* Boilerplate written in ES6 class structure.
+* Heavily commented and stripped down for most minimal build.
+* [Webpack](https://webpack.js.org/) + [Bublé](https://buble.surge.sh/guide/) + [PostCSS](http://postcss.org/).
+* [BrowserSync](https://browsersync.io/) for livereload during development.
+* [Stats.js](https://github.com/mrdoob/stats.js/) for displaying FPS/MS.
+* [phaser-manifest-loader](https://github.com/mattcolman/phaser-manifest-loader) for easy asset loading.
+* Separate builds for production and development.
+* [Howler.js](https://github.com/goldfire/howler.js/)
 
 ## Usage
 
