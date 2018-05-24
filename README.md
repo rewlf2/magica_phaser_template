@@ -54,6 +54,6 @@ Access your project in the browser. (Production server does not automatically op
 
 `locahost:7777`
 
-You may change the configuration in server.js and related client-side script (example in /src/states/Test.js) to change it. You must also change the PORT variable in `npm start` to match the new port number.
+You may change the configuration in server.js and related client-side script (example in /src/states/Test.js) to change it. You must also change the PORT variable in `npm start` inside [package.json] to match the new port number.
 
 Check function getMysqlCon() in server.js for configuration on connection to MySQL database.
